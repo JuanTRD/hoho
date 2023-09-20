@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông số hình tròn</title>
+</head>
+<body>
+<h1>Diện tích hình tròn</h1>
+Bán kinh hình tròn là: 3.14 <br>
+Nhập Bán kính hình tròn:
+<input type="text" id="rad">
+<button onclick="tinh()">Tính</button>
+<p id="C"></p>
+<p id="S"></p>
+<script>
+    function tinh(){
+    let rad =+document.getElementById("rad").value;
+    let C=2*rad*3.14;
+    let S=rad*rad*3.14;
+    document.getElementById("C").innerHTML = "Chu vi là: "+C;
+    document.getElementById("S").innerHTML = "Diện tích là: "+S;
+    }
+</script>
+</body>
+</html>
