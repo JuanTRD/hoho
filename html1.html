@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm số</title>
+</head>
+<body>
+<h1>Điểm trung bình các môn của học sinh:</h1>
+Nhập điểm Vật Lý
+<input type="text" name="Vật Lý" id="vl">
+Nhập điểm Hóa Học:
+<input type="text" name="Hóa Học" id="hh">
+Nhập điểm Sinh học:
+<input type="text" name="Sinh học" id="sh">
+<button onclick="Result()">Kết quả:</button>
+<p id="Result"></p>
+
+<script>
+    function Result(){
+        let x=+document.getElementById("vl").value;
+        let y=+document.getElementById("hh").value;
+        let z=+document.getElementById("sh").value;
+        let sum=x+y+z;
+        let average=(x+y+z)/3;
+        document.getElementById("Result").innerHTML="Điểm tb là: " + average + " Tổng điểm là: " + sum;
+    }
+</script>
+</body>
+</html>
