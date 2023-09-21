@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính toán</title>
+</head>
+<body>
+<input type="text" id="a">
+<select id="dau">
+    <option value="1">-</option>
+    <option value="2">+</option>
+    <option value="3">*</option>
+    <option value="4">/</option>
+</select>
+<input type="text" id="b">
+<button onclick="Cal()">Calculation</button>
+<p id="Result:"></p>
+<script>
+    function Cal(){
+        let a =+document.getElementById("a").value;
+        let b=+document.getElementById("b").value;
+        let x=document.getElementById("dau").value;
+        if (x==1) {
+            y = a-b;
+        }else if (x==2){
+            y=a+b;
+        } else if (x==3){
+            y=a*b;
+        } else y=a/b;
+        document.getElementById("Result:").innerHTML="Kết quả là: "+ y;
+    }
+</script>
+</body>
+</html>
